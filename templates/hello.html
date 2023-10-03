@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block foroozan %}
+
+    {% if name == "jack" %}
+        <p>sorry ...</p>
+        {% else %}
+        <p>hi {{name|upper}}</p>
+        <h1> about us ,</h1>
+        <p> this site soon release and alot of user can easily access ...</p>
+    {% endif %}
+
+    <h1 style="background-color:rgb(198, 212, 71);">Hello {{name}}</h1>
+{% endblock %}
+
+
+
+

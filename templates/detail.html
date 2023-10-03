@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block foroozan %} 
+
+    <div class="card">
+
+        <!-- <a href="/detail/{{Todo.id}}"> {{Todo.title}} </a> <br/>  -->
+        <p class="card-body" >  {{todo.body}} </p> <br/>
+    </div>
+
+    <a href="{% url 'delete' todo.id %} " class="btn btn-danger" >delete</a>
+    <a href="{% url 'update' todo.id %} " class="btn btn-info" >update</a>
+    
+    
+{% endblock %}
